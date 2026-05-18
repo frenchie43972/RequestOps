@@ -1,2 +1,53 @@
-# RequestOps
-RequestOps is a Request Review Portal for internal purchase approval requests.  The purpose of the app is to turn informal approval requests that usually happen through email, chat, spreadsheets, or verbal conversations into a structured system.
+requestops/
+├─ app/
+│ ├─ assets/
+│ │ └─ css/
+│ │ └─ main.css
+│ ├─ components/
+│ │ ├─ app/
+│ │ ├─ requests/
+│ │ └─ ui/
+│ ├─ composables/
+│ ├─ layouts/
+│ ├─ pages/
+│ │ ├─ requests/
+│ │ └─ admin/
+│ ├─ plugins/
+│ ├─ utils/
+│ ├─ app.vue
+│ └─ error.vue
+│
+├─ server/
+│ ├─ api/
+│ │ └─ requests/
+│ ├─ middleware/
+│ ├─ services/
+│ │ └─ requests/
+│ └─ utils/
+│
+├─ shared/
+│ ├─ constants/
+│ ├─ schemas/
+│ │ └─ requests/
+│ ├─ types/
+│ └─ utils/
+│
+├─ prisma/
+│ ├─ schema.prisma
+│ └─ seed.ts
+│
+├─ docker/
+│ └─ postgres/
+│
+├─ docs/
+│ ├─ architecture.md
+│ ├─ development-workflow.md
+│ └─ phase-1-handoff.md
+│
+├─ .env.example
+├─ .gitignore
+├─ docker-compose.yml
+├─ nuxt.config.ts
+├─ package.json
+├─ tsconfig.json
+└─ README.md
