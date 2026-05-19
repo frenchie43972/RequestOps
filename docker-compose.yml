@@ -1,1 +1,16 @@
-touch this touch that
+services:
+  postgres:
+    image: postgres:18.4
+    container_name: requestops-postgres
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: requestops
+      POSTGRES_PASSWORD: requestops
+      POSTGRES_DB: requestops
+    volumes:
+      - requestops_postgres_data:/var/lib/postgresql
+
+volumes:
+  requestops_postgres_data:
