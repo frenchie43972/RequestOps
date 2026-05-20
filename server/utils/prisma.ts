@@ -1,1 +1,1 @@
-console.log('prisma.ts');
+export {};
